@@ -13,16 +13,41 @@
    }
 </script>
     
+<main>
 
 <h1>Idea Generator</h1>
 
-<p> To generate short, random ideas</p>
+<p> To generate short, random ideas (fictional ones)</p>
 
-<button on:click = {ask}> Click to Generate </button>
+<button on:click = {ask} id = "ideabtn"> Click to Generate </button>
+<br />
+<input value = {idea} size = 70 readonly/>
 
-<input value = {idea} readonly/>
-
-
+</main>
 <style>
+  main {
+    text-align:center;
+  }
 
+  h1 {
+    font-size:2.5rem;
+  }
+  p {
+    opacity:0.4;
+    margin-bottom:5%;
+  }
+  input {
+    height:50px;
+    
+  }
+  #ideabtn, input {
+    border-style:none;
+  }
+  #ideabtn {
+    margin-bottom:30px;
+    padding:10px;
+  }
+  #ideabtn:hover {
+    background-color: white;
+  }
 </style>
