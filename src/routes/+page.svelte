@@ -20,8 +20,12 @@
 <p> To generate short, random ideas (fictional ones)</p>
 
 <button on:click = {ask} id = "ideabtn"> Click to Generate </button>
+
 <br />
-<input value = {idea} size = 70 readonly/>
+
+
+<textarea readonly> {idea} </textarea>
+
 
 </main>
 <style>
@@ -36,11 +40,13 @@
     opacity:0.4;
     margin-bottom:5%;
   }
-  input {
-    height:50px;
+  textarea {
+    width:300px;
+    height:100px;
     
   }
-  #ideabtn, input {
+
+  #ideabtn, textarea {
     border-style:none;
   }
   #ideabtn {
